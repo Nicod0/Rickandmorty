@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgba(132, 206, 110, 1);
+  background-color: rgba(4, 169, 223, 0.55);
+}
+.searchbar {
+  margin-left: auto;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  font-size: 20px;
+}
+.links a {
+  text-decoration: none;
+  color: rgba(132, 206, 110, 1);
+}
+.links a:visited {
+  text-decoration: none;
+  color: rgba(132, 206, 110, 1);
+}
+.link:hover,
+.link2:hover {
+  color: rgba(0, 147, 76, 1);
+}
