@@ -1,5 +1,4 @@
 import "./App.css";
-import Nav from "./components/Nav/Nav";
 import Detail from "./components/Detail/Detail";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
@@ -8,7 +7,7 @@ import Favorites from "./components/Favorites/Favorites";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -28,7 +27,7 @@ function App() {
   }
   useEffect(() => {
     !access && navigate("/");
-  }, [access]);
+  }, [access, navigate]);
 
   const onSearch = (id) => {
     if (characters.find((char) => char.id === id)) {
@@ -50,16 +49,19 @@ function App() {
     setCharacters(characters.filter((char) => char.id !== id));
   };
 
-  const { pathname } = useLocation();
-
   return (
-    <div className="App" style={{ padding: "25px" }}>
-      {pathname !== "/" && <Nav onSearch={onSearch} />}
+    <div className="App">
       <Routes>
         <Route path="/" element={<Form login={login} />} />
         <Route
           path="/home"
-          element={<Home characters={characters} onClose={onClose} />}
+          element={
+            <Home
+              characters={characters}
+              onClose={onClose}
+              onSearch={onSearch}
+            />
+          }
         />
         <Route path="/about" element={<About />} />
         <Route path="/favorites" element={<Favorites />} />

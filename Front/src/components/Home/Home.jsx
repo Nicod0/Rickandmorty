@@ -1,11 +1,12 @@
 import Cards from "../Cards/Cards";
 import style from "./Home.module.css";
+import Nav from "../Nav/Nav";
 
 export default function Home(props) {
   return (
-    <div>
-      <h1 className={style.title}>Cartas</h1>
+    <main className={style.container}>
+      <Nav onSearch={props.onSearch} />
       <Cards characters={props.characters} onClose={props.onClose} />
-    </div>
+    </main>
   );
 }
