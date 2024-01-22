@@ -1,0 +1,16 @@
+.input {
+  background-color: rgb(4, 169, 223);
+  width: 200px;
+  height: 40px;
+  color: rgba(30, 45, 91, 1);
+  border: 2px solid rgba(132, 206, 110, 1);
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(4, 169, 223);
+  color: rgba(30, 45, 91, 1);
+  font-size: 20px;
+  border: 2px solid rgba(132, 206, 110, 1);
+}
