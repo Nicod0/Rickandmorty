@@ -45,8 +45,7 @@ function App() {
       });
   };
 
-  let count = 0;
-  const Juan = "es puto";
+  const participantes = ["Juan", "Alejo", "Milton", "Nico"];
   const onClose = (id) => {
     setCharacters(characters.filter((char) => char.id !== id));
   };
