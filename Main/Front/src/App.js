@@ -46,7 +46,7 @@ function App() {
   };
 
   const participantes = ["Juan", "Alejo", "Milton", "Nico"];
-  const nico = 0;
+  const nico = 3819432432;
   const onClose = (id) => {
     setCharacters(characters.filter((char) => char.id !== id));
   };
