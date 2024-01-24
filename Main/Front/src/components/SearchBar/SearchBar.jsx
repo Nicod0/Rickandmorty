@@ -8,7 +8,7 @@ export default function SearchBar(props) {
   };
 
   return (
-    <div>
+    <div className={style.container}>
       <input type="search" onChange={handleChange} className={style.input} />
       <button
         className={style.button}
@@ -21,3 +21,4 @@ export default function SearchBar(props) {
     </div>
   );
 }
+

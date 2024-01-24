@@ -1,9 +1,9 @@
 .input {
-  background-color: rgb(4, 169, 223);
+  background: #1f2029;
   width: 200px;
-  height: 40px;
+  height: 30px;
   color: rgba(30, 45, 91, 1);
-  border: 2px solid rgba(132, 206, 110, 1);
+  border: 2px solid #ffeba7;
 }
 
 .button {
