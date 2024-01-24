@@ -8,15 +8,15 @@ export default function Nav({ onSearch }) {
       <div className={style.links}>
         <div className={style.home}>
           <Link to="/home">
-            <h4 className={style.home_link}>Home</h4>
+            <h4 className={style.home_link}>RICK AND MORTY</h4>
           </Link>
         </div>
         <div className={style.navigation}>
           <Link to="/about">
-            <h4 className={style.link}>About</h4>
+            <h4 className={style.link}>ABOUT</h4>
           </Link>
           <Link to="/favorites">
-            <h4 className={style.link3}>Favorites</h4>
+            <h4 className={style.link3}>FAVORITES</h4>
           </Link>
         </div>
       </div>

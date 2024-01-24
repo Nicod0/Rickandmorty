@@ -15,10 +15,14 @@ function App() {
   const navigate = useNavigate();
   const [access, setAccess] = useState(false);
   const username = "niicodperez@gmail.com";
+  const username2 = "1234@gmail.com";
   const password = "manuel12";
 
   function login(userData) {
-    if (userData.password === password && userData.username === username) {
+    if (
+      userData.password === password &&
+      (userData.username === username || userData.username === username2)
+    ) {
       setAccess(true);
       navigate("/home");
     } else {
@@ -45,7 +49,8 @@ function App() {
       });
   };
 
-  const participantes = ["Alejo", "Milton", "Nico"];
+  const participantes = ["Juan", "Alejo", "Milton", "Nico"];
+  const nico = 0;
   const onClose = (id) => {
     setCharacters(characters.filter((char) => char.id !== id));
   };

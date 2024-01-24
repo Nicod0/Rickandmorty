@@ -4,9 +4,9 @@
   align-items: center;
   height: 100vh;
 }
+
 .card {
   padding: 0 1.2rem;
-
   text-align: center;
   background: rgba(42, 43, 56, 0.98);
   height: 100vh;

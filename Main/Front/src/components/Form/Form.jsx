@@ -29,7 +29,7 @@ export default function Form({ login }) {
     <div className={style.container}>
       <div className={style.card}>
         <div className={style.title_container}>
-          <h4 className={style.title}>IDENTIFICATE!</h4>
+          <h2 className={style.title}>IDENTIFICATE!</h2>
         </div>
         <form action="" onSubmit={handleSubmit}>
           <div className={style.field}>
