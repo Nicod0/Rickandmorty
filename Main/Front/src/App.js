@@ -50,7 +50,7 @@ function App() {
   };
 
   const participantes = ["Juan", "Alejo", "Milton", "Nico"];
-  const nico = 10;
+  const nico = 0;
   const onClose = (id) => {
     setCharacters(characters.filter((char) => char.id !== id));
   };
