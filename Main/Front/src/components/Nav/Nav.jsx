@@ -1,28 +1,21 @@
-import SearchBar from "../SearchBar/SearchBar";
+
 import { Link } from "react-router-dom";
-import style from "./Nav.module.css";
+import style from "./Nav.module.css"; 
+import SearchBar from "../SearchBar/SearchBar";
+
 
 export default function Nav({ onSearch }) {
   return (
-    <article className={style.container}>
+    
+    <nav className={style.nav_container}>
+      <Link to = "/home"><h2><span>Rick</span> and <span>Morty</span></h2></Link>
       <div className={style.links}>
-        <div className={style.home}>
-          <Link to="/home">
-            <h4 className={style.home_link}>RICK AND MORTY</h4>
-          </Link>
-        </div>
-        <div className={style.navigation}>
-          <Link to="/about">
-            <h4 className={style.link}>ABOUT</h4>
-          </Link>
-          <Link to="/favorites">
-            <h4 className={style.link3}>FAVORITES</h4>
-          </Link>
-        </div>
+        <Link to = "/about">About</Link>
+        <Link to = "/favorites">Favorites</Link>
       </div>
       <div className={style.searchbar}>
         <SearchBar onSearch={onSearch} />
       </div>
-    </article>
+    </nav>
   );
 }
