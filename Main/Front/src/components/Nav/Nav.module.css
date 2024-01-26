@@ -1,42 +1,36 @@
-.container {
-  background: #1f2029;
-  justify-content: space-between;
-  align-items: center;
-  height: 15vh;
-  display: flex;
-}
-.links {
-  display: flex;
-  font-size: 20px;
-  width: 100%;
-}
-.home {
-  margin-right: auto;
-  margin-left: 3%;
-  display: block;
-}
-
-.home h4 {
-  color: #ffeba7;
-}
-
-.navigation {
-  width: 200px;
-  margin-top: 3%;
-  display: flex;
-}
-
-.navigation h4 {
-  font-size: 16px;
-  color: #ffeba7;
-}
-
-.links a {
-  text-decoration: none;
+/*Rick and Morty*/
+h2 {
+  font-weight: 400;
   color: white;
-  margin: 0 7%;
-}
-.links a:visited {
-  text-decoration: none;
+  margin-left: 140px;
+  span {
+    font-weight: bold;
+  }
 }
 
+h2:hover {
+  color: #ffeba7;
+}
+
+/*Container*/
+
+.nav_container {
+  padding: .4ram;
+  background-color: #1f2029;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*About y Favorites*/
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+a:hover {
+  color: #ffeba7;
+}
+
+/*Barra de navegacion*/
